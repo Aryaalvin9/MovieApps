@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_movie"
+        android:layout_width="195dp"
+        android:layout_height="280dp"
+        android:layout_margin="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_movie_card"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:id="@+id/bg_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="bottom"
+                android:background="@drawable/background_gradien"
+                android:layout_alignBottom="@id/img_movie_card"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAS: Red Notice"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/desc_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An off-duty SAS soldier, Tom Buckingham, must thwart a terror attack on a train running through the Channel Tunnel. As the action escalates on the train, events transpire in the corridors of power"
+                android:layout_below="@id/bg_title"
+                android:maxLines="7"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                />
+
+            <LinearLayout
+                android:id="@+id/bg_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_above="@+id/bg_retings"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_remove_red_eye_24"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:id="@+id/view_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:text="1212121"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bg_retings"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp">
+                <RatingBar
+                    android:id="@+id/retings_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="15dp"
+                    android:progressTint="#345B63"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="10dp"
+                    android:numStars="10"
+                    android:scaleX="0.3"
+                    android:scaleY="0.3"
+                    />
+
+                <TextView
+                    android:id="@+id/vote_card"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="65dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="8.8" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

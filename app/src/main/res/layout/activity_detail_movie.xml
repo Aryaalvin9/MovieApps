@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page.DetailMovie"
+    android:orientation="vertical">
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:cornerRadius="20dp"
+        app:roundedCorners="bottomLeft|bottomRight"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:id="@+id/title_detai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free Guy"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/desc_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A bank teller called Guy realizes he is a background character in an open world video game called Free City that will soon go offline."
+            android:textColor="@color/black"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Runtime"/>
+            <TextView
+                android:id="@+id/runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text=": 155"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Statuss"/>
+            <TextView
+                android:id="@+id/status_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text=": Released"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reales Date"/>
+            <TextView
+                android:id="@+id/reales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text=": 2021-08-11"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Revenuee"/>
+            <TextView
+                android:id="@+id/revenue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text=": 317000000"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/retings_detail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textSize="27dp"
+                android:text="8.0"/>
+            <RatingBar
+                android:id="@+id/reting_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transformPivotY="35dp"
+                android:transformPivotX="0dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
